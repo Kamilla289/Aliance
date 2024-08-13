@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
-  height: 94px;
+  height: 93px;
   position: fixed;
   z-index: 2;
   left: 0;
@@ -39,20 +39,21 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1428px;
   margin: auto;
 }
 
 .header {
   padding-top: 94px;
   min-height: 100vh;
+  max-height: 961px;
 }
 
 .header-image {
   background-image: url('../img/header-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center left;
   position: relative;
 }
 
@@ -71,7 +72,7 @@ body {
 .header-logo {
   display: flex;
   align-items: center;
-  padding: 0px 50px;
+  padding: 0px 49px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
 }
@@ -87,7 +88,7 @@ body {
 .header-nav-link {
   text-decoration: none;
   font-size: 16px;
-  margin-right: 50px;
+  margin-right: 51px;
   color: inherit;
 }
 
@@ -96,7 +97,7 @@ body {
   flex-shrink: 0;
   align-items: center;
   gap: 10px;
-  margin-right: 50px;
+  margin-right: 48px;
 }
 
 .header-phone-link {
@@ -119,10 +120,12 @@ body {
 .navbar-button {
   flex-shrink: 0;
   height: 100%;
+  padding: 25px 52px;
 }
 
 .header-button {
   height: 100%;
+  padding: 25px 60px;
 }
 
 .seporator {
@@ -132,7 +135,7 @@ body {
 }
 
 .header-content {
-  padding-top: 150px;
+  padding-top: 148px;
   position: relative;
   z-index: 1;
   color: #fff;
@@ -141,9 +144,12 @@ body {
 .header-title {
   max-width: 1080px;
   font-family: 'Bebas Neue';
-  font-size: 80px;
+  font-size: 77px;
   line-height: 120%;
-  margin: 30px 0;
+  margin: 23px 2px;
+  letter-spacing: 1.5px;
+  word-spacing: -0.4px;
+  line-height: 95px;
 }
 
 .header-text {
@@ -153,6 +159,8 @@ body {
   font-size: 16px;
   line-height: 160%;
   margin-bottom: 50px;
+  margin-top: 37px;
+  word-spacing: 0.6px;
 }
 
 .header-features {
@@ -166,7 +174,8 @@ body {
 }
 
 .header-features-item {
-  padding: 30px 50px;
+  padding: 28px 50px;
+  width: 288px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
@@ -174,6 +183,13 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.icon-header-svg {
+  margin-top: 4px;
+  margin-left: -1px;
 }
 
 .header-features-item:not(:last-child) {
@@ -190,13 +206,15 @@ body {
   color: #292D33;
   font-size: 60px;
   line-height: 120%;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 .steps {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 30px;
+  gap: 27px;
 }
 
 .steps-item {
@@ -209,7 +227,7 @@ body {
   font-size: 48px;
   line-height: 120%;
   color: #5C8EE5;
-  margin-top: 30px;
+  margin-top: 27px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -228,6 +246,8 @@ body {
   font-size: 28px;
   line-height: 160%;
   color: #292D33;
+  margin-top: 33px;
+  margin-bottom: 12px;
 }
 
 .steps-text {
@@ -237,6 +257,7 @@ body {
   color: #828A99;
   margin-top: 10px;
   margin-bottom: 20px;
+  word-spacing: 0.6px;
 }
 
 .steps-link {
