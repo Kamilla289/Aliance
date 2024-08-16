@@ -292,7 +292,7 @@ body {
 }
 
 
-@media (max-width: 1760px) {
+@media (max-width: 1763px) {
   .header-nav-link {
     font-size: 0.875rem;
   }
@@ -319,5 +319,8 @@ body {
 @media (max-width: 1200px) {
   html {
     font-size: 0.625rem;
+  }
+  .header {
+    min-height: 0;
   }
 }
