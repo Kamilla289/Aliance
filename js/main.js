@@ -27,6 +27,35 @@ const closeMenu = (event) => { // функция закрывания меню
   lightModeOff();
 }
 
+const swiper = new Swiper('.swiper', {
+  speed: 400,
+  autoHeight: true,
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 840px
+    840: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 1200px
+    1200: {
+       slidesPerView: 5,
+    }
+  }
+});
+
 window.addEventListener("scroll", () => {
   this.scrollY > 1 ? lightModeOn() : lightModeOff();
 });
