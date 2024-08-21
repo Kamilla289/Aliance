@@ -27,7 +27,10 @@ const closeMenu = (event) => { // функция закрывания меню
   lightModeOff();
 }
 
-const swiper = new Swiper('.swiper', {
+
+
+
+const swiper = new Swiper('.header-slider', {
   speed: 400,
   autoHeight: true,
   loop: true,
@@ -52,7 +55,7 @@ const swiper = new Swiper('.swiper', {
     // when window width is >= 1200px
     1200: {
        slidesPerView: 5,
-    }
+    },
   }
 });
 
@@ -63,4 +66,34 @@ window.addEventListener("scroll", () => {
 mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault ();
   menu.classList.contains('is-open') ? closeMenu() : openMenu();
+});
+
+
+const swiperSteps = new Swiper('.steps-slider', {
+  speed: 400,
+  autoHeight: true,
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.steps-button-next',
+    prevEl: '.steps-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    590: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 840px
+    1000: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1200px
+    1200: {
+       slidesPerView: 4,
+    },
+  }
 });
