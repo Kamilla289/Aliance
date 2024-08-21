@@ -85,8 +85,8 @@ body {
 }
 
 .logo-svg {
-  width: 9rem;
-  height: 2.75rem;
+  width: 144px;
+  height: 44px;
 }
 
 .header-nav {
@@ -151,7 +151,7 @@ body {
 
 .header-phone-link {
  text-decoration: none; 
- font-size: 1rem;
+ font-size: 16px;
  color: inherit;
 }
 
@@ -187,7 +187,7 @@ body {
 
 .seporator {
   width: 9.375rem;
-  height: 0.125rem;
+  height: 2px;
   background-color: #5C8EE5;
 }
 
@@ -237,9 +237,13 @@ body {
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
+.header-features-item:nth-child(-n+4) {
+  border-right: 0.5px solid rgba(235, 235, 240, 0.2);
+}
+
 .header-features-text {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 160%;
   margin-bottom: 0;
   margin-top: 1.25rem;
@@ -258,7 +262,7 @@ body {
 .section-title {
   font-family: 'Bebas Neue';
   color: #292D33;
-  font-size: 3.75rem;
+  font-size: 60px;
   line-height: 120%;
   margin-top: 1.4375rem;
   margin-bottom: 1.4375rem;
@@ -268,17 +272,17 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 1.6875rem;
+  gap: 27px;
 }
 
 .steps-item {
-  max-width: 20.625rem;
+  max-width: 330px;
 }
 
 .steps-num {
   font-family: 'Bebas Neue';
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 48px;
   line-height: 120%;
   color: #5C8EE5;
   margin-top: 1.6875rem;
@@ -297,7 +301,7 @@ body {
 
 .steps-title {
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 28px;
   line-height: 160%;
   color: #292D33;
   margin-top: 2.0625rem;
@@ -306,7 +310,7 @@ body {
 
 .steps-text {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 160%;
   color: #828A99;
   margin-top: 0.625rem;
@@ -319,7 +323,7 @@ body {
   align-items: center;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 160%;
   color: #5C8EE6;
 }
@@ -338,6 +342,9 @@ body {
   .header-nav-link {
     font-size: 11px;
   }
+  .header-nav-link {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1700px) {
@@ -349,6 +356,24 @@ body {
   }
 }
 
+@media (max-width: 1610px) {
+  html {
+    font-size: 13px;
+  }
+  .header-features {
+    margin-top: 80px;
+  }
+  .header-nav-link {
+    font-size: 15px;
+  }
+  .header-phone-link {
+    font-size: 15px;
+  }
+  .button-text {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 1530px) {
   html {
     font-size: 11px;
@@ -356,9 +381,133 @@ body {
   .header-features {
     margin-top: 75px;
   }
+  .navbar-button {
+    width: 210px;
+    padding: 18px 24px;
+  }
+  .header-button {
+    font-size: 15px;
+  }
+  .button-text {
+    font-size: 13px;
+  }
+  .header-title {
+    font-size: 60px;
+  }
+  .header-features-text {
+    font-size: 13px;
+  }
+  .header-text {
+    font-size: 15px;
+  }
+  .steps-text {
+    font-size: 14px;
+  }
+  .steps-title {
+    font-size: 26px;
+  }
+  .steps-link {
+    font-size: 15px;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1413px) {
+  html {
+    font-size: 11px;
+  }
+  .header-features {
+    margin-top: 75px;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 16.6px;
+}
+  .logo-svg {
+    width: 120px;
+  }
+  .navbar-button {
+    width: 210px;
+    padding: 18px 24px;
+  }
+  .header-button {
+    font-size: 15px;
+  }
+  .button-text {
+    font-size: 13px;
+  }
+  .header-title {
+    font-size: 60px;
+  }
+  .header-features-text {
+    font-size: 13px;
+  }
+  .header-text {
+    font-size: 15px;
+  }
+  .steps-text {
+    font-size: 14px;
+  }
+  .steps-title {
+    font-size: 26px;
+  }
+  .steps-link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1413px) {
+  html {
+    font-size: 11px;
+  }
+  .header-features {
+    margin-top: 75px;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 16.6px;
+}
+  .logo-svg {
+    width: 120px;
+  }
+  .navbar-button {
+    width: 150px;
+    padding: 12px 24px;
+    line-height: 1.2;
+  }
+  .header-button {
+    font-size: 14px;
+  }
+  .button-text {
+    font-size: 14px;
+  }
+  .header-phone-link {
+    font-size: 14px;
+  }
+  .header-nav-link {
+    font-size: 14px;
+}
+  .header-title {
+    font-size: 55px;
+  }
+  .header-features-text {
+    font-size: 13px;
+  }
+  .header-text {
+    font-size: 14px;
+  }
+  .steps-text {
+    font-size: 14px;
+  }
+  .steps-title {
+    font-size: 26px;
+  }
+  .steps-link {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 1252px) {
   html {
     font-size: 10px;
   }
@@ -378,11 +527,58 @@ body {
     height: 80px;
   }
   .navbar-button {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .slider-buttons {
     display: flex;
+  }
+  .header-features {
+    margin-top: 75px;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 16.6px;
+}
+  .logo-svg {
+    width: 120px;
+  }
+  .navbar-button {
+    width: 150px;
+    padding: 12px 24px;
+    line-height: 1.2;
+  }
+  .header-button {
+    font-size: 14px;
+  }
+  .button-text {
+    font-size: 13px;
+  }
+  .header-phone-link {
+    font-size: 12px;
+  }
+  .header-nav-link {
+    font-size: 12.5px;
+}
+  .header-title {
+    font-size: 50px;
+  }
+  .header-features-text {
+    font-size: 14px;
+  }
+  .header-text {
+    font-size: 14px;
+  }
+  .steps-text {
+    font-size: 14px;
+  }
+  .steps-title {
+    font-size: 24px;
+  }
+  .steps-link {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 50px;
   }
 }
 
@@ -406,23 +602,27 @@ body {
     display: none;
   }
   .navbar {
-    height: 5rem;
+    height: 68px;
   }
   .navbar-button {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 80px;
+    padding: 9px 28px;
   }
   .header-logo {
     flex-grow: 1;
     justify-content: center;
   }
+  .logo-svg {
+    width: 120px;
+
+  }
   .mobile-menu-toggle {
-    width: 60px;
+    width: 80px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.7rem;
+    padding: 27.2px;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .navbar-light .mobile-menu-line {
@@ -530,18 +730,24 @@ body {
 
 @media (max-width: 840px) {
   .container {
-   width: 49rem;
+   width: 54rem;
 
   }
   .header-title {
-    font-size: 64px;
+    font-size: 48px;
   }
   .header-content {
     padding-top: 3rem;
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 524px) {
+  .container {
+   width: 53rem;
+
+  }
+}
+@media (max-width: 480px) {
   .container {
    width: 40rem;
 }

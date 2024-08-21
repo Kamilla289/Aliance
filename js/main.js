@@ -42,12 +42,12 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
     },
     // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
+    590: {
+      slidesPerView: 2,
     },
     // when window width is >= 840px
-    840: {
-      slidesPerView: 4,
+    930: {
+      slidesPerView: 3,
     },
     // when window width is >= 1200px
     1200: {
