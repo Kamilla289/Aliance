@@ -32,7 +32,7 @@ const closeMenu = (event) => { // функция закрывания меню
 
 const swiper = new Swiper('.header-slider', {
   speed: 400,
-  autoHeight: true,
+
   loop: true,
   slidesPerView: 1,
   navigation: {
