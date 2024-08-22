@@ -151,6 +151,8 @@ body {
 }
 
 .navbar-button {
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
   height: 100%;
   padding: 1.5625rem 3.25rem;
