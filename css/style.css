@@ -54,6 +54,7 @@ body {
 
 .header {
   padding-top: 5.875rem;
+  height: 961px;
 }
 
 .header-image {
@@ -100,7 +101,7 @@ body {
 }
 
 .header-nav-item:not(:last-child) {
-  margin-right: 2.1rem;
+  margin-right: 3.1rem;
 }
 
 .header-nav-item {
@@ -282,6 +283,7 @@ body {
   list-style: none;
   padding: 0;
   gap: 27px;
+  margin-top: 0;
 }
 
 .steps-item {
@@ -374,7 +376,7 @@ body {
 }
 
 .card {
-  flex-basis: 33%;
+  flex-basis: 33.3%;
   border: 1px solid #EBEBF0;
   position: relative;
   text-decoration: none;
@@ -397,7 +399,7 @@ body {
 }
 
 .card-content {
-  padding: 40px 28px 0 50px;
+  padding: 40px 27px 0 50px;
 }
 
 .card-title {
@@ -414,7 +416,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  margin-bottom: 394px;
+  margin-bottom: 414px;
+  margin-top: 10px;
 }
 
 .cards-company {
@@ -428,7 +431,7 @@ body {
   position: relative;
   text-decoration: none;
   transition: border 0.2s;
-  padding: 50px 50px 70px 89px;
+  padding: 50px 50px 47px 89px;
 }
 
 .title-company {
@@ -445,14 +448,46 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
+  margin-top: 10px;
 }
 
 .company-content {
-  margin-left: 89px;
+  margin-left: 86px;
 }
 
-.company-content:nth-child(1) {
+.block-1 {
   margin-left: 70px;
+}
+
+.section-title.company-title {
+  margin-top: 23px;
+  margin-bottom: 55px;
+}
+
+
+
+.card-company:nth-child(1) {
+  padding-left: 68px;
+}
+
+
+.card-company:hover .title-company {
+  color: #5C8EE6;
+}
+
+.card-company:hover {
+  border: 1px solid #5C8EE6;
+}
+
+.section.section-light {
+  margin-bottom: 0px;
+}
+.section.production {
+  margin-top: 81px;
+}
+
+.section-title.card-production {
+  margin-bottom: 55px;
 }
 
 @media (max-width: 1763px) {
@@ -461,6 +496,9 @@ body {
   }
   .header-nav-link {
     font-size: 16px;
+  }
+  .header-nav-item:not(:last-child) {
+    margin-right: 29px;
   }
 }
 
@@ -564,6 +602,9 @@ body {
     line-height: 160%;
     margin-bottom: 394px;
   }
+  .header {
+    height: 850px;
+  }
 }
 
 @media (max-width: 1413px) {
@@ -606,6 +647,9 @@ body {
   }
   .steps-link {
     font-size: 15px;
+  }
+  .header {
+    height: 750px;
   }
 }
 
@@ -667,7 +711,7 @@ body {
     font-size: 10px;
   }
   .header {
-    min-height: 606px;
+    min-height: 790px;
   }
   .header-title {
     line-height: 120%;
@@ -742,7 +786,7 @@ body {
     font-size: 9px;
   }
   .header {
-    min-height: 549px;
+    min-height: 820px;
   }
   .header-nav {
     display: none;
@@ -912,6 +956,9 @@ body {
 @media (max-width: 480px) {
   .container {
    width: 40rem;
+}
+.header {
+  height: 934px;
 }
 }
 
