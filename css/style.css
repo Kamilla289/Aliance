@@ -423,6 +423,9 @@ body {
 .cards-company {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  fill: #5C8EE5;
 }
 .card-company {
   display: flex;
@@ -430,8 +433,10 @@ body {
   border: 1px solid #EBEBF0;
   position: relative;
   text-decoration: none;
-  transition: border 0.2s;
-  padding: 50px 50px 47px 89px;
+  transition: border 0.2s fill 0.2s;
+  padding: 50px 47px 53px 36px;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-company {
@@ -452,11 +457,12 @@ body {
 }
 
 .company-content {
-  margin-left: 86px;
+  margin-left: 39px;
+  padding-right: 10px;
 }
 
 .block-1 {
-  margin-left: 70px;
+  margin-left: 38px;
 }
 
 .section-title.company-title {
@@ -464,8 +470,13 @@ body {
   margin-bottom: 55px;
 }
 
+.card-image-company {
+  width: 100%;
+  fill: #828A99;
+}
+
 .card-company:nth-child(1) {
-  padding-left: 68px;
+  padding-left: 36px;
 }
 
 .card-company:hover .title-company {
@@ -474,6 +485,11 @@ body {
 
 .card-company:hover {
   border: 1px solid #5C8EE6;
+  fill: #5C8EE5;
+}
+
+.card-company:hover .card-image-company{
+  fill: #5C8EE5;
 }
 
 .section.section-light {
