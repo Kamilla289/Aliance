@@ -363,6 +363,7 @@ body {
   background: #5C8EE5;
   height: 100%;
   width: 80px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -370,6 +371,13 @@ body {
   cursor: pointer;
 }
 
+.blog-button-prev {
+  padding: 18px 15px 18px 29px;
+}
+
+.blog-button-next {
+  padding: 18px 29px 18px 15px;
+}
 .steps-buttons {
   display: none;
 }
@@ -605,10 +613,14 @@ body {
   cursor: pointer;
 }
 
+.blog-slider {
+  margin-top: 57px;
+}
+
 .blog-card {
   display: flex;
   position: relative;
-  min-height: 25rem;
+  min-height: 400px;
   flex-direction: column;
   justify-content: flex-end;
   text-decoration: none;
@@ -621,7 +633,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 99%;
   object-fit: cover;
   z-index: -2;
 }
@@ -640,12 +652,13 @@ body {
   font-size: 16px;
   line-height: 160%;
   margin-top: 0px;
+  margin-bottom: 3px;
 }
 
 .blog-slider-footer {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 26px;
   justify-content: space-between;
 }
 
@@ -656,25 +669,31 @@ body {
 
 .section-cta {
   position: relative;
-  padding-top: 100px;
-  margin-top: 224px;
-  padding-bottom: 100px;
+  padding-top: 4.3125rem;
+  margin-top: 14rem;
+  padding-bottom: 6.25rem;
 }
 
 .cta-image {
   position: absolute;
   bottom: 0;
   left: 0;
-  max-width: 720px;
+  max-width: 44.625rem;
 }
 
 .cta-form-wrapper {
   display: flex;
   justify-content: flex-end;
+  margin-left: 15.3125rem;
 }
 
 .cta-form {
-  max-width: 840px;
+  max-width: 52.5rem;
+}
+
+.cta-form-title {
+  font-size: 58px;
+  margin-bottom: 1.6875rem;
 }
 
 .cta-form-text {
@@ -683,28 +702,32 @@ body {
   font-size: 16px;
   line-height: 160%;
   color: #828A99;
-  margin-top: 20px;
-  margin-bottom: 42px;
+  margin-top: 1.25rem;
+  margin-bottom: 3.125rem;
   max-width: 640px;
 }
 
 .input-group-wrapper {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
+
 }
 
 .input-group {
   position: relative;
-  height: 66px;
+  height: 4.125rem;
   flex-grow: 1;
   background-color: #F0F2F5;
+  width: 25.3125rem;
 }
+
+
 
 .input-group-label {
   position: absolute;
   cursor: text;
   top: 1.5rem;
-  left: 1.975rem;
+  left: 1.8125rem;
   font-weight: 400;
   font-size: 16px;
   color: #828A99;
@@ -712,12 +735,12 @@ body {
 }
 
 .input {
-  width: 100%;
+  width: 99%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   border: 1px solid #E4E4EB;
   background-color: transparent;
   outline: none;
@@ -733,24 +756,27 @@ body {
   left: 1rem;
   font-size: 10px;
   background-color: inherit;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 
 .cta-form-footer {
   display: flex;
-  margin-top: 30px;
-  gap: 30px;
+  margin-top: 1.875rem;
+  gap: 1.875rem;
   align-items: center;
 }
 
 .cta-form-button {
   flex-shrink: 0;
+  max-width: 232px;
+  padding: 1.125rem 3.25rem;
+  font-size: 14px;
 }
 
 .notify {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 11px;
 }
 
 .notify-icon {
@@ -1081,6 +1107,33 @@ body {
   .section-title {
     font-size: 50px;
   }
+  .cta-form-text {
+    font-size: 14px;
+  }
+  .input-group-label {
+    font-size: 14px;
+  }
+  .cta-form-button {
+    font-size: 14px;
+  }
+  .notify-text {
+    font-size: 12px;
+  }
+  .cta-image {
+    max-width: 450px;
+  }
+  .cta-form-wrapper {
+    margin-left: 50px;
+  }
+  .cta-form {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .cta-form-wrapper {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1252,6 +1305,20 @@ body {
   .clients-logo-item:nth-child(1) {
     display: none;
   }
+  .cta-image {
+    display: none;
+  }
+
+  .cta-form {
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-form-wrapper {
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 840px) {
@@ -1285,12 +1352,30 @@ body {
   }
 }
 
+@media (max-width: 548px) {
+  .cta-form {
+    max-width: 300px;
+  }
+  .input-group-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-form-footer {
+    display: flex;
+    flex-direction: column;
+}
+  .input-group {
+    width: 100%;
+  }
+}
+
 @media (max-width: 524px) {
   .container {
    width: 53rem;
 
   }
 }
+
 @media (max-width: 480px) {
   .container {
    width: 40rem;
@@ -1357,7 +1442,17 @@ body {
 .trademark-card-text {
   font-size: 14px;
 }
-
+.clients-logo {
+  height: 70%;
+  padding: 0;
+}
+.clients-logo-item {
+  flex-basis: 137px;
+}
+.clients-logo-list {
+  justify-content: center;
+  width: 100%;
+}
 }
 
 @media (max-width: 403px) {
@@ -1378,7 +1473,13 @@ body {
 
 @media (max-width: 375px) {
   .container {
-   max-width: 345px;
+   max-width: 100%;
+  }
+
+  .card-container {
+    max-width: 345px;
+    width: 345px;
+    min-width: 345px;
   }
   
   .header {
@@ -1486,8 +1587,12 @@ body {
     max-width: 360px;
   }
 
+  .section-light {
+    margin-bottom: 37px;
+  }
+
   .section.production {
-    margin-top: 100px;
+    margin-top: 80px;
     max-width: 342px;
     margin-left: auto;
     margin-right: auto;
@@ -1496,8 +1601,11 @@ body {
   .section-title.card-production {
     margin-bottom: 33px;
   }
+  .cards {
+    width: 345px;
+  }
   .card {
-    flex-basis: 95%;
+    flex-basis: 100%;
     height: 429px;
   }
   .card-content {
@@ -1527,6 +1635,10 @@ body {
   }
   .image-three, .image-four {
       max-width: 88%;
+  }
+
+  .primary-button-prev, .primary-button-next {
+    height: 40px;
   }
   
   .trademark {
@@ -1615,4 +1727,75 @@ body {
     height: 50px;
     padding: 0;
   }
+  .blog {
+    width: 345px;
+    margin: 101px auto auto auto;
+  }
+  .blog-slider {
+    margin-top: 32px;
+  }
+  .blog-card {
+    min-height: 195px;
+    padding: 20px;
+  }
+  .blog-card-image {
+    width: 96%;
+    height: 100%;
+  }
+  .blog-card-title {
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+  .blog-card-text {
+    display: none;
+  }
+  .blog-slider-footer {
+    margin-top: 20px;
+    width: 345px;
+    height: 40px;
+  }
+  .blog-buttons {
+    height: 40px;
+  }
+  .blog-button-prev, .blog-button-next {
+    padding: 10px 15px;
+  }
+  .section-cta {
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  .cta-form {
+    max-width: 345px;
+    margin: 0;
+  }
+  .cta-form-title {
+    margin-top: 7px;
+  }
+  .cta-form-wrapper {
+    width: 345px;
+    margin: 0;
+  }
+  .cta-form-footer {
+    margin-top: 10px;
+    gap: 32px;
+  }
+  .cta-form-button {
+    max-width: 345px;
+    height: 62px;
+    padding: 21px 109px;
+  }
+  .input-group {
+    width: 101%;
+    height: 62px;
+  }
+  .input-group-wrapper {
+    gap: 18px;
+  }
+  .input-group-label {
+    top: 22px;
+    left: 30px;
+  }
 }
+
+  
