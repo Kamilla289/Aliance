@@ -141,3 +141,17 @@ modalClose.addEventListener("click", (event) => {
   event.preventDefault();
   modal.classList.remove("is-open");
 });
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    e.preventDefault();
+    modal.classList.remove("is-open");
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    modal.classList.remove("is-open");
+  }
+});
