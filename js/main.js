@@ -1,17 +1,21 @@
 const navbar = document.querySelector(".navbar");
+const logoLight = document.querySelector(".logo-light");
 const logo = document.querySelector(".logo-svg use");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
+const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
-  logo.href.baseVal = "img/sprite.svg#logo"; 
 }
 
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
-  logo.href.baseVal = "img/sprite.svg#logo-light"; 
 }
+
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
+};
 
 const openMenu = (event) => { // функция открывания меню
   menu.classList.add("is-open"); // вешает класс
@@ -60,7 +64,10 @@ const swiper = new Swiper('.header-slider', {
 });
 
 window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
 
 mMenuToggle.addEventListener("click", (event) => {

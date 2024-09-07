@@ -40,6 +40,21 @@ body {
 .navbar-light {
   background: #fff;
   color: #292D33;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.navbar-light .logo-light {
+  display: none;
+}
+
+.navbar-light .logo-dark {
+  display: block;
+}
+
+.navbar-scroll {
   height: 4.625rem;
 }
 
@@ -887,12 +902,20 @@ body {
   text-align: left;
 }
 
+.footer-menu-link:hover, .footer-policy:hover {
+ color: #49494b;
+}
+
 .footer-menu-link-bold {
   font-size: 16px;
   font-weight: 600;
   line-height: 160%;
   color: #292D33;
   margin-bottom: 1.875rem;
+}
+
+.footer-menu-link-bold:hover {
+  text-decoration: underline #292D33;
 }
 
 .footer-wrapper {
@@ -1026,6 +1049,51 @@ body {
   margin-bottom: 1.5rem;
   font-size: 14px;
   padding: 1.25rem 7.0313rem;
+}
+
+.header-content-internal {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  margin-left: 15rem;
+}
+
+.header-internal {
+  background-color: #F0F2F5;
+  margin-top: 93px;
+}
+
+.header-title-internal {
+  font-size: 80px;
+  font-weight: 500;
+  margin: 22px 0 11px 0;
+}
+
+.nav-crumbs-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul.nav-crumbs-list li {
+  display: inline-flex;
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
+ul.nav-crumbs-list li+li:before {
+  margin: 0 7px;
+  color: #828A99;
+  content: "—";
+}
+ul.nav-crumbs-list li a {
+  color: #828A99;
+  text-decoration: none;
+}
+ul.nav-crumbs-list li a:hover {
+  color: #292D33;
 }
 
 @media (max-width: 1763px) {
@@ -1796,6 +1864,9 @@ body {
 .clients-logo-list {
   justify-content: center;
   width: 100%;
+}
+.header-content-internal {
+  margin-left: 30px;
 }
 }
 
