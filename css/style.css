@@ -55,7 +55,7 @@ body {
 }
 
 .navbar-scroll {
-  height: 4.625rem;
+  height: 68px;
 }
 
 .navbar-light .header-logo-path {
@@ -1478,6 +1478,10 @@ ul.nav-crumbs-list li a:hover {
   .navbar {
     height: 68px;
   }
+
+  .navbar-mobile {
+    height: 68px !important;
+  }
   .navbar-button {
     width: 80px;
     padding: 9px 28px;
@@ -1657,6 +1661,10 @@ ul.nav-crumbs-list li a:hover {
 
   .footer-info-address, .footer-info-email {
     font-size: 14px;
+  }
+
+  .header-internal {
+    margin-top: 65px;
   }
 }
 

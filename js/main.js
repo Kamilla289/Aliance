@@ -64,7 +64,7 @@ const swiper = new Swiper('.header-slider', {
 });
 
 window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  this.scrollY > 1 ? changeNavHeight("74px") : changeNavHeight("94px");
   if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
