@@ -152,3 +152,28 @@ document.addEventListener("keyup", (event) => {
     modal.classList.toggle("is-open");
   }
 });
+
+const forms = document.querySelectorAll("form"); //Собираем все формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+      errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=username]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите имя",
+      },
+      {
+        rule: "maxLength",
+        value: 50,
+        errorMessage: "Максимально 30 символов",
+      },
+    ])
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите телефон",
+      },
+    ]);
+});
