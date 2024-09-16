@@ -140,26 +140,12 @@
          </footer>
          
 
-         <!-- Временное расположение -->
-         <div class="modal modal-thanks">
-            <div class="modal-dialog modal-dialog-thanks">
-              <img class="thanks" src="img/thanks.png" alt="спасибо">
-              <h2 class="modal-title">Спасибо за заявку!</h2>
-              <a href="#" class="modal-close" data-toggle="modal">
-                <svg class="close" width="24" height="24">
-                  <use href="img/sprite.svg#close"></use>
-                </svg>
-              </a>
-              <p class="modal-text modal-text-thanks">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-              <a class="button-return" href="/index.php"><button type="submit" class="button modal-form-button button-thanks">Вернуться на главную</button></a>
-            </div>
-         </div>
-        <!-- Временное расположение -->
+         
 
-         <div class="modal">
+         <div class="modal" id="feedback-modal">
           <div class="modal-dialog">
             <h2 class="modal-title">Есть вопросы?</h2>
-            <a href="#" class="modal-close" data-toggle="modal">
+            <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
               <svg class="close" width="24" height="24">
                 <use href="img/sprite.svg#close"></use>
               </svg>
@@ -189,6 +175,21 @@
               </form>
           </div>
          </div>
+         <!-- Временное расположение -->
+         <div class="modal modal-thanks" id="alert-modal">
+            <div class="modal-dialog modal-dialog-thanks">
+              <img class="thanks" src="img/thanks.png" alt="спасибо">
+              <h2 class="modal-title">Спасибо за заявку!</h2>
+              <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+                <svg class="close" width="24" height="24">
+                  <use href="img/sprite.svg#close"></use>
+                </svg>
+              </a>
+              <p class="modal-text modal-text-thanks">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+              <a class="button-return" href="/index.php"><button type="submit" class="button modal-form-button button-thanks">Вернуться на главную</button></a>
+            </div>
+         </div>
+        <!-- Временное расположение -->
 
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/just-validate.production.min.js"></script>
