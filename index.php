@@ -14,11 +14,11 @@
 <body class="front-page">
   <div class="mobile-menu">
     <ul class="mobile-menu-nav">
-      <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-link">О компании</a></li>
-      <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-link">Контрактное производство</a>
+      <li class="mobile-menu-nav-item"><a href="./about.php" class="mobile-menu-link">О компании</a></li>
+      <li class="mobile-menu-nav-item"><a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
       <ul class="mobile-submenu">
         <li class="mobile-submenu-item">
-          <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+          <a class="mobile-submenu-link" href="./avtohim.php">Автомобильная химия</a>
         </li>
         <li class="mobile-submenu-item">
           <a class="mobile-submenu-link" href="#">Бытовая химия</a>
@@ -37,10 +37,10 @@
         </li>
       </ul>
       </li>
-      <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-link">Собственные торговые марки</a>
+      <li class="mobile-menu-nav-item"><a href="./trademarks.php" class="mobile-menu-link">Собственные торговые марки</a>
         <ul class="mobile-submenu">
           <li class="mobile-submenu-item">
-            <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
+            <a class="mobile-submenu-link" href="./avtohim-ag.php">Автохимия AG-Tech</a>
           </li>
           <li class="mobile-submenu-item">
             <a class="mobile-submenu-link" href="#">Автохимия AP</a>
@@ -48,7 +48,7 @@
         </ul>
       </li>
       <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-link">Новости</a></li>
-      <li class="mobile-menu-nav-item"><a href="#" class="mobile-menu-link">Контакты</a></li>
+      <li class="mobile-menu-nav-item"><a href="./contact.php" class="mobile-menu-link">Контакты</a></li>
     </ul>
     <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
     <div class="mobile-info">
@@ -87,10 +87,10 @@
     </a>
       <ul class="header-nav">
         <li class="header-nav-item"><a href="about.php" class="header-nav-link">О компании</a></li>
-        <li class="header-nav-item"><a href="#" class="header-nav-link">Контрактное производство</a></li>
-        <li class="header-nav-item"><a href="#" class="header-nav-link">Собственные торговые марки</a></li>
+        <li class="header-nav-item"><a href="contracts.php" class="header-nav-link">Контрактное производство</a></li>
+        <li class="header-nav-item"><a href="trademarks.php" class="header-nav-link">Собственные торговые марки</a></li>
         <li class="header-nav-item"><a href="#" class="header-nav-link">Новости</a></li>
-        <li class="header-nav-item"><a href="#" class="header-nav-link">Контакты</a></li>
+        <li class="header-nav-item"><a href="./contact.php" class="header-nav-link">Контакты</a></li>
       </ul>
       <div class="header-phone">
         <svg class="phone" width="24" height="24">
@@ -172,60 +172,15 @@
 </div>
 <!-- /.container -->
   </header>
-  <section class="section section-light">
-    <div class="container">
-      <div class="seporator"></div>
-      <div class="section-container">
-        <h2 class="section-title">Схема работы</h2>
-          <!-- Slider main container -->
-          <div class="swiper steps-slider">
-            <!-- Additional required wrapper -->
-            <ol class="swiper-wrapper steps">
-              <!-- Slides -->
-              <li class="swiper-slide steps-item"><span class="steps-num">01</span>
-                <h3 class="steps-title">Знакомство</h3>
-                <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
-              </li>
-              <li class="swiper-slide steps-item"><span class="steps-num">02</span>
-                <h3 class="steps-title">Заключение <br> договора</h3>
-                <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
-              </li>
-              <li class="swiper-slide steps-item"><span class="steps-num">03</span>
-                <h3 class="steps-title">Производство</h3>
-                <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые <br> элементы.</p>
-              </li>
-              <li class="swiper-slide steps-item"><span class="steps-num">04</span>
-                <h3 class="steps-title">Доставка</h3>
-                <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации <br> разума над эмоциями.</p>
-              </li>
-            </ol>
-            <a href="#" class="button-link">Оставить заявку</a>
-            <!-- If we need navigation buttons -->
-            <div class="steps-buttons primary-button-wrapper">
-              <div class="steps-button-prev primary-button-prev">
-                <svg width="36" height="24">
-                  <use href="img/sprite.svg#arrow-prev"></use>
-                </svg>
-              </div>
-              <div class="steps-button-next primary-button-next">
-                <svg width="36" height="24">
-                  <use href="img/sprite.svg#arrow-next"></use>
-                </svg>
-              </div>
-            </div>
-          <!-- /.steps-button -->
-      </div>
-    </div>  
-  </div>
-    <!-- /.container -->
-   </section>
+
+  <?php include_once('./template-parts/steps.php');?>
 
     <section class="section production">
       <div class="container card-container">
         <div class="seporator"></div>
           <h2 class="section-title card-production">Контрактное производство</h2>
           <div class="cards">
-            <a href="#" class="card">
+            <a href="avtohim.php" class="card">
               <div class="card-content">
                 <h3 class="card-title">Автомобильная химия</h3>
                 <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
@@ -273,29 +228,9 @@
       </div>
     </section>
     
-    <section class="section trademark">
-      <div class="container">
-        <div class="seporator"></div>
-          <h2 class="section-title trademark-title">собственные торговые марки</h2>
-          <div class="trademark-cards">
-            <div class="trademark-card">
-              <svg class="trademark-card-logo">
-                <use href="img/sprite.svg#AGTECH"></use>
-              </svg>
-              <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
-              <p class="trademark-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-            </div>
-            <div class="trademark-card">
-              <svg class="trademark-card-logo">
-                <use href="img/sprite.svg#AP"></use>
-              </svg>
-              <h3 class="trademark-card-title">Автохимия AP</h3>
-              <p class="trademark-card-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-            </div>
-          </div>
-          <!-- /.trademark-cards -->
-      </div>
-    </section>
+    <?php $block_title = "Собственные торговые марки";
+     include_once('./template-parts/trademarks-block.php');?>
+
     <!-- /.section trademark -->
      <section class="section founder">
       <img src="img/founder.png" alt="" class="founder-photo">
@@ -306,7 +241,7 @@
             <h2 class="section-title founder-title">Отношение к делу <br> и к клиентам</h2>
             <p class="founder-text">Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия.</p>
               <p class="founder-text founder-text-indent">А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.</p>
-            <a href="#" class="button-link">Подробнее о компании</a>
+            <a href="./about.php" class="button-link">Подробнее о компании</a>
           </div>
         </div>
         <!-- /.founder-content-wrapper -->
@@ -315,136 +250,8 @@
       <!-- /.container -->
      </section>
      <!-- /.section founder -->
-      <section class="section clients">
-        <div class="container">
-          <div class="seporator"></div>
-            <div class="clients-wrapper">
-              <div class="clients-content">
-                <h2 class="section-title clients-title">Производим аэрозольную продукцию для разных сфер</h2>
-                  <ul class="clients-list">
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#him"></use>
-                      </svg>
-                      Химические производства
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#car"></use>
-                      </svg>
-                      Автомойки
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#eat"></use>
-                      </svg>
-                      Пищевая продукция
-                    </li>
-                    <li class="clients-list-item">
-                      <svg width="30" height="30" class="clients-list-icon">
-                        <use href="img/sprite.svg#brush"></use>
-                      </svg>
-                      Лаки и краски
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#cosmetic"></use>
-                      </svg>
-                      Косметические средства
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#car-cosm"></use>
-                      </svg>
-                      Автомобильная косметика
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#shirt"></use>
-                      </svg>
-                      Косметика по уходу за одеждой
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#boots"></use>
-                      </svg>
-                      Косметика по уходу за обувью
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#bricks"></use>
-                      </svg>
-                      Строительные материалы
-                    </li>
-                    <li class="clients-list-item">
-                      <svg class="clients-list-icon" width="30" height="30">
-                        <use href="img/sprite.svg#more"></use>
-                      </svg>
-                      И многих других
-                    </li>
-                  </ul>
-                
-              </div>
-              <div class="clients-logo-list">
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-                <a href="#" class="clients-logo-item"><img src="img/Burger_King.svg" alt="Burger_King" class="clients-logo"></a>
-              </div>
-            </div>
-        </div>
-      </section>
-      <!-- /.section clients -->
-       <section class="section blog">
-        <div class="container">
-          <div class="seporator"></div>
-          <h2 class="section-title">Блог экспертов в области производства</h2>
-            <!-- Slider main container -->
-            <div class="swiper blog-slider">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <a href="#" class="swiper-slide blog-card">
-                  <img src="img/blog/blog-photo-1.png" alt="" class="blog-card-image">
-                  <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
-                  <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                </a>
-                <a href="#" class="swiper-slide blog-card">
-                  <img src="img/blog/blog-photo-2.png" alt="" class="blog-card-image">
-                  <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
-                  <p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на независимые элементы. Безусловно, высокотехнологичная...</p>
-                </a>
-                <a href="#" class="swiper-slide blog-card">
-                  <img src="img/blog/blog-photo-1.png" alt="" class="blog-card-image">
-                  <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
-                  <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
-                </a>
-              </div>
-              <div class="blog-slider-footer">
-                <a href="#" class="button-link">Весь блог</a>
-                  <div class="blog-buttons primary-button-wrapper">
-                    <div class="blog-button-prev primary-button-prev">
-                      <svg width="36" height="24">
-                        <use href="img/sprite.svg#arrow-prev"></use>
-                      </svg>
-                    </div>
-                    <div class="blog-button-next primary-button-next">
-                      <svg width="36" height="24">
-                        <use href="img/sprite.svg#arrow-next"></use>
-                      </svg>
-                    </div>
-                  </div>
-                <!-- /.blog-button -->
-              </div>
-              <!-- /.blog-slider-footer -->
-            </div>
-        </div>
-        <!-- /.container -->
-       </section>
-       <!-- /.section blog -->
-      <?php include_once('footer.php');?>
+
+    <?php include_once('./template-parts/clients.php');?>
+    <?php $block_title_blog = "Блог экспертов в области производства";
+    include_once('./template-parts/blog-cards.php');?>
+    <?php include_once('footer.php');?>
