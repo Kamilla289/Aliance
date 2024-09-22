@@ -84,7 +84,7 @@
                 </svg>
               </a>
               <p class="modal-text modal-text-thanks">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-              <a class="button-return" href="/index.php"><button type="submit" class="button modal-form-button button-thanks">Вернуться на главную</button></a>
+              <a class="button-return" href="index.php"><button type="submit" class="button modal-form-button button-thanks">Вернуться на главную</button></a>
             </div>
          </div>
         <!-- Временное расположение -->
