@@ -78,7 +78,7 @@ body{font-family:"Noto Sans",sans-serif;margin:0}
 .trademark-card:hover .trademark-card-logo{fill:#5C8EE6}
 .trademark-card:hover .trademark-card-title{color:#5C8EE6}
 .founder{min-height:41rem;position:relative;margin-bottom:0}
-.founder-photo{position:absolute;width:43.7%;left:0;top:0;height:100%;object-fit:cover}
+.founder-photo{position:absolute;width:66.7%;left:0;top:0;height:100%;object-fit:cover}
 .founder-content{max-width:45rem;padding-left:0.3125rem}
 .founder-title{margin-bottom:27px}
 .founder-content-wrapper{display:flex;justify-content:flex-end;padding-top:3.125rem}
@@ -388,7 +388,7 @@ ul.nav-crumbs-list-white li a:hover{color:#ffffff}
 .clients-logo{height:70%;padding:0}
 .clients-logo-item{flex-basis:137px}
 .clients-logo-list{justify-content:center;width:100%}
-.header-content-internal{margin-left:30px}
+.header-content-internal{margin-left:15px}
 }
 @media (max-width:403px){.container{max-width:90%}
  .header-title{font-size:48px;line-height:120%}

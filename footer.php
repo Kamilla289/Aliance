@@ -7,12 +7,12 @@
                 <p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
                 <div class="input-group-wrapper">
                   <div class="input-group">
-                    <input id="user-name" name="username" type="text" class="input" placeholder=" " maxlength="100" required>
-                    <label class="input-group-label" for="user-name">Имя</label>
+                    <input id="user-name-footer" name="username" type="text" class="input" placeholder=" " maxlength="100" required>
+                    <label class="input-group-label" for="user-name-footer">Имя</label>
                   </div>
                   <div class="input-group">
-                    <input id="user-phone" name="userphone" type="tel" class="input phone-mask" placeholder=" " maxlength="30" required>
-                    <label class="input-group-label" for="user-phone">Номер телефона</label>
+                    <input id="user-phone-footer" name="userphone" type="tel" class="input phone-mask" placeholder=" " maxlength="30" required>
+                    <label class="input-group-label" for="user-phone-footer">Номер телефона</label>
                   </div>
                 </div>
                 <!-- /.input-group-wrapper -->
@@ -84,7 +84,7 @@
                 </svg>
               </a>
               <p class="modal-text modal-text-thanks">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-              <a class="button-return" href="index.php"><button type="submit" class="button modal-form-button button-thanks">Вернуться на главную</button></a>
+              <button type="submit" class="button modal-form-button button-thanks">Вернуться на главную</button>
             </div>
          </div>
         <!-- Временное расположение -->

@@ -36,8 +36,6 @@ const closeMenu = (event) => { // функция закрывания меню
 
 const swiper = new Swiper('.header-slider', {
   speed: 400,
-
-  loop: true,
   slidesPerView: 1,
   navigation: {
     nextEl: '.slider-button-next',
@@ -79,7 +77,6 @@ mMenuToggle.addEventListener("click", (event) => {
 const swiperSteps = new Swiper('.steps-slider', {
   speed: 400,
   autoHeight: true,
-  loop: true,
   slidesPerView: 1,
   navigation: {
     nextEl: '.steps-button-next',
@@ -107,7 +104,6 @@ const swiperSteps = new Swiper('.steps-slider', {
 
 const swiperBlog = new Swiper('.blog-slider', {
   speed: 400,
-  loop: true,
   slidesPerView: 1,
   spaceBetween: 30,
   navigation: {

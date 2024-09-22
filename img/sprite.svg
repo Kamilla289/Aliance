@@ -146,25 +146,3 @@
     <path d="M3.86726 3.15991L3.16016 3.86702L11.292 11.9988L3.1603 20.1305L3.8674 20.8376L11.9991 12.7059L20.1307 20.8376L20.8378 20.1305L12.7062 11.9988L20.838 3.86702L20.1309 3.15991L11.9991 11.2917L3.86726 3.15991Z" fill="#828A99"/>
   </symbol>
 </svg>
-
-
-<!-- 
-<svg class="icon">
-  <use xlink:href="#logo"></use>
-</svg><svg class="icon">
-  <use xlink:href="#logo-light"></use>
-</svg><svg class="icon">
-  <use xlink:href="#phone"></use>
-</svg> 
-<svg class="icon">
-  <use xlink:href="#control"></use>
-</svg><svg class="icon">
-  <use xlink:href="#delivery"></use>
-</svg><svg class="icon">
-  <use xlink:href="#sertificate"></use>
-</svg><svg class="icon">
-  <use xlink:href="#speed"></use>
-</svg><svg class="icon">
-  <use xlink:href="#time"></use>
-</svg>
--->
