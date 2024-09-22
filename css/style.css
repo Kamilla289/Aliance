@@ -2,12 +2,6 @@
 @import url("swiper-bundle.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="" rel="stylesheet"> 
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  */
-
 * {
   box-sizing: border-box;
 }
